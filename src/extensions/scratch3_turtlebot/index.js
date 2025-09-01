@@ -336,12 +336,12 @@ class Scratch3TurtleBotBlocks {
                     blockType: BlockType.COMMAND,
                     arguments: {}
                 },
-                {
-                    opcode: 'pushBumper',
-                    text: formatMessage({id: 'turtlebot.pushBumper', default: '[TURTLEBOT_BUMPER] のバンパーが押された時'}),
-                    blockType: BlockType.HAT,
-                    arguments: { TURTLEBOT_BUMPER: {type:ArgumentType.STRING, menu:'TURTLEBOT_BUMPER', defaultValue:"前方"}}
-                },
+                // {
+                //     opcode: 'pushBumper',
+                //     text: formatMessage({id: 'turtlebot.pushBumper', default: '[TURTLEBOT_BUMPER] のバンパーが押された時'}),
+                //     blockType: BlockType.HAT,
+                //     arguments: { TURTLEBOT_BUMPER: {type:ArgumentType.STRING, menu:'TURTLEBOT_BUMPER', defaultValue:"前方"}}
+                // },
                 {
                     opcode: 'pushButton',
                     text: formatMessage({id: 'turtlebot.pushButton', default: '[TURTLEBOT_BUTTON] のボタンが押された時'}),
@@ -354,12 +354,12 @@ class Scratch3TurtleBotBlocks {
                     blockType: BlockType.COMMAND,
                     arguments: { TURTLEBOT_LED: {type:ArgumentType.STRING, menu:'TURTLEBOT_LED', defaultValue:"消灯"}}
                 },
-                {
-                    opcode: 'pubSound',
-                    text: formatMessage({id: 'turtlebot.pubSound', default: '[TURTLEBOT_SOUND] のブザー'}),
-                    blockType: BlockType.COMMAND,
-                    arguments: { TURTLEBOT_SOUND: {type:ArgumentType.STRING, menu:'TURTLEBOT_SOUND', defaultValue:"スイッチON"}}
-                },
+                // {
+                //     opcode: 'pubSound',
+                //     text: formatMessage({id: 'turtlebot.pubSound', default: '[TURTLEBOT_SOUND] のブザー'}),
+                //     blockType: BlockType.COMMAND,
+                //     arguments: { TURTLEBOT_SOUND: {type:ArgumentType.STRING, menu:'TURTLEBOT_SOUND', defaultValue:"スイッチON"}}
+                // },
                 {
                     opcode: 'pubGo_straight',
                     text: formatMessage({id: 'turtlebot.pubGo_straight', default: '[GO_STRAIGHT] cm 直進する'}),
@@ -372,12 +372,12 @@ class Scratch3TurtleBotBlocks {
                 //     blockType: BlockType.COMMAND,
                 //     arguments: { MOVING_SPEED:{type: ArgumentType.ANGLE, defaultValue:formatMessage({id:'turtlebot.move_speed',　default:'15'})}}
                 // },
-                {
-                    opcode: 'pubRotation_speed',
-                    text: formatMessage({id: 'turtlebot.pubRotation_speed', default: '[ROTATION_SPEED] deg/sで回転する'}),
-                    blockType: BlockType.COMMAND,
-                    arguments: { ROTATION_SPEED:{type: ArgumentType.ANGLE, defaultValue:formatMessage({id:'turtlebot.rotation_speed',　default:'90'})}}
-                },
+                // {
+                //     opcode: 'pubRotation_speed',
+                //     text: formatMessage({id: 'turtlebot.pubRotation_speed', default: '[ROTATION_SPEED] deg/sで回転する'}),
+                //     blockType: BlockType.COMMAND,
+                //     arguments: { ROTATION_SPEED:{type: ArgumentType.ANGLE, defaultValue:formatMessage({id:'turtlebot.rotation_speed',　default:'90'})}}
+                // },
                 {
                     opcode: 'pubOdome_Initialize',
                     text: formatMessage({id: 'turtlebot.pubOdome_Initialize', default: 'TurtleBotの位置と角度の記録を初期化'}),
@@ -396,12 +396,12 @@ class Scratch3TurtleBotBlocks {
                     blockType: BlockType.COMMAND,
                     arguments: {WORD:{type:ArgumentType.STRING,defaultValue:"こんにちは"}}
                 },
-                {
-                    opcode: 'boolBumper',
-                    text: formatMessage({id: 'turtlebot.boolBumper',　default: '[TURTLEBOT_BUMPER] のバンパーが押されている'}),
-                    blockType: BlockType.BOOLEAN,
-                    arguments: { TURTLEBOT_BUMPER:{type:ArgumentType.STRING, menu:'TURTLEBOT_BUMPER', defaultValue:"前方"}}
-                },
+                // {
+                //     opcode: 'boolBumper',
+                //     text: formatMessage({id: 'turtlebot.boolBumper',　default: '[TURTLEBOT_BUMPER] のバンパーが押されている'}),
+                //     blockType: BlockType.BOOLEAN,
+                //     arguments: { TURTLEBOT_BUMPER:{type:ArgumentType.STRING, menu:'TURTLEBOT_BUMPER', defaultValue:"前方"}}
+                // },
                 {
                     opcode: 'boolButton',
                     text: formatMessage({id: 'turtlebot.boolButton',　default: '[TURTLEBOT_BUTTON] のボタンが押されている'}),
@@ -425,37 +425,37 @@ class Scratch3TurtleBotBlocks {
                     text: formatMessage({id: 'turtlebot.subRobotAngle',　default: 'TurtleBotの現在の角度(度)'}),
                     blockType: BlockType.BOOLEAN,
                     arguments: {}
-                }/*,
+                },
                 {
                   opcode: 'subQrdistance',
                   text: formatMessage({ id: 'turtlebot.subQrdistance', default: 'カメラからQRコードまでの前後の距離(cm)' }),
                   blockType: BlockType.BOOLEAN,
                   arguments: {}
                 },
-                {
-                  opcode: 'subQrwidth',
-                  text: formatMessage({ id: 'turtlebot.subQrwidth', default: 'カメラからQRコードまでの左右の距離(cm)' }),
-                  blockType: BlockType.BOOLEAN,
-                  arguments: {}
-                },
-                {
-                  opcode: 'subQrangle',
-                  text: formatMessage({ id: 'turtlebot.subQrangle', default: 'カメラから見たQRコードの角度(度)' }),
-                  blockType: BlockType.BOOLEAN,
-                  arguments: {}
-                },
+                // {
+                //   opcode: 'subQrwidth',
+                //   text: formatMessage({ id: 'turtlebot.subQrwidth', default: 'カメラからQRコードまでの左右の距離(cm)' }),
+                //   blockType: BlockType.BOOLEAN,
+                //   arguments: {}
+                // },
+                // {
+                //   opcode: 'subQrangle',
+                //   text: formatMessage({ id: 'turtlebot.subQrangle', default: 'カメラから見たQRコードの角度(度)' }),
+                //   blockType: BlockType.BOOLEAN,
+                //   arguments: {}
+                // },
                 {
                   opcode: 'subQrrecod',
                   text: formatMessage({ id: 'turtlebot.subQrrecod', default: 'QRコードの言葉' }),
                   blockType: BlockType.BOOLEAN,
                   arguments: {}
                 },
-                {
-                  opcode: 'subRecognition_word',
-                  text: formatMessage({ id: 'turtlebot.subRecognition_word', default: '音声認識した言葉' }),
-                  blockType: BlockType.BOOLEAN,
-                  arguments: {}
-        		}*/
+                // {
+                //   opcode: 'subRecognition_word',
+                //   text: formatMessage({ id: 'turtlebot.subRecognition_word', default: '音声認識した言葉' }),
+                //   blockType: BlockType.BOOLEAN,
+                //   arguments: {}
+        		// }
             ],
             menus: {
                 TURTLEBOT_NAME: ["TurtleBot","TurtleBot_1","TurtleBot_2","TurtleBot_3","TurtleBot_4","TurtleBot_5","TurtleBot_6","TurtleBot_7","TurtleBot_8","TurtleBot_9","TurtleBot_10","TurtleBot_11","TurtleBot_test"],
